@@ -8,7 +8,7 @@ import os
 
 # to record all print statements in the log
 # Create the directory if it doesn't exist
-log_dir = "logs"
+log_dir = "data\logs"
 os.makedirs(log_dir, exist_ok=True)  
 
 current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -22,8 +22,8 @@ sys.stdout = log_file
 # update these parameters for variations on the simulation
 seq_len = 3
 deck_size = 52 # even number, or else deck generation code truncates when halving deck
-num_decks = 300000
-scoring = "CARDS" #alternatively, scoring = "CARDS"
+num_decks = 10
+scoring = "TRICKS" #alternatively, scoring = "CARDS"
 
 # create all of the possible sequence combinations match-ups of length seq_len between the two players
 # store in a list of tuples

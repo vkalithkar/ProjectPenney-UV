@@ -21,7 +21,7 @@ def visualize_all_games_output(all_games_output: pd.DataFrame,
     '''
 
     # the directory where to save the heatmap, create if doesn't exist
-    fig_dir = "heatmaps"  
+    fig_dir = "data\heatmaps"  
     os.makedirs(fig_dir, exist_ok=True)
 
     time_dir = os.path.join(fig_dir, current_time)
