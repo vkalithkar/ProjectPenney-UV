@@ -27,4 +27,4 @@ Penney's Game is a card game involving two players selecting sequences and attem
 
 Vandana Kalithkar
 
-Project Link: https://github.com/vkalithkar/ProjectPenney 
+Project Link: https://github.com/vkalithkar/ProjectPenney-UV.git
