@@ -23,6 +23,10 @@ Penney's Game is a card game involving two players selecting sequences and attem
 * `visualize.py`: function creating and storing heatmaps for both players winner frequencies
 * `game.py`: additional functions and variables stored within "Game" object across other modules
 
+## Dependencies 
+
+This repository uses numpy, pandas, matplotlib, and seaborn.
+
 ## Author:
 
 Vandana Kalithkar
