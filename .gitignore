@@ -13,4 +13,6 @@ ENV/
 env.bak/
 venv.bak/
 
-rons_advice.txt
+build/
+projectpenney_uv.egg-info
+logs/

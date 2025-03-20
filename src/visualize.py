@@ -19,16 +19,16 @@ def visualize_all_games_output(all_games_output: pd.DataFrame,
         current_time (str): date and time of this run to create distinct filenames for heatmaps
         title (str): the title to give to this visualization (sns heatmap)
     '''
-
+    
     # the directory where to save the heatmap, create if doesn't exist
-    fig_dir = "data\heatmaps"  
+    fig_dir = "data/heatmaps"  
     os.makedirs(fig_dir, exist_ok=True)
 
     time_dir = os.path.join(fig_dir, current_time)
     os.makedirs(time_dir, exist_ok=True)
 
     # generate and save heatmap
-    ax = sns.heatmap(all_games_output, linewidth=0.5, cmap='viridis', annot=True)
+    ax = sns.heatmap(all_games_output, linewidth=0.5, cmap='crest', annot=True)
     ax.set_title(title)
 
     fig = ax.get_figure()

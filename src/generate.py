@@ -1,5 +1,6 @@
 import numpy as np
 import itertools
+import os
 
 def create_game_combos(seq_len: int=3) -> list:
     '''
@@ -60,6 +61,9 @@ def get_n_decks(n_decks: int,
         np.random.seed(seed)
         np.random.shuffle(decks[i])  # Shuffle each row with a different seed
     
-    # output as .csv
-    np.savetxt("decks_output.csv", decks, delimiter=",", fmt="%d")  
+    # output as .csv in data folder (create if doesn't already exist)
+    fig_dir = "data/"  
+    os.makedirs(fig_dir, exist_ok=True)
+    np.savetxt(os.path.join(fig_dir, "decks_output.csv"), decks, delimiter=",", fmt="%d")  
+    
     return decks, seeds

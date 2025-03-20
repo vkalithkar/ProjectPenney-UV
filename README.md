@@ -17,15 +17,20 @@ Penney's Game is a card game involving two players selecting sequences and attem
 
 ### Files included:
 
-* `main.py`: start here! code running the simulations, calling generate, score, and visualize functions
+* `main.py`: start here! code creating logs and running the simulations by calling augmentation function
 * `generate.py`: datagen functions for decks and combinations of player sequences  
 * `score.py`: functions for processing and scoring individual games and larger simulations
 * `visualize.py`: function creating and storing heatmaps for both players winner frequencies
 * `game.py`: additional functions and variables stored within "Game" object across other modules
+* `helpers.py`: additional functions and the augmentation function to execute the simulation and create visualizations
+
+## Quick Start
+
+Open `main.py` and augment the parameters of the function `simulate_and_visualize()`, which is defined in `helpers.py`. This function will do everything except (generating, scoring, visualizing) for creating logs.
 
 ## Dependencies 
 
-This repository uses numpy, pandas, matplotlib, and seaborn.
+This repository uses numpy, pandas, matplotlib, seaborn, datetime, sys, and os.
 
 ## Author:
 
