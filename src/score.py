@@ -44,7 +44,7 @@ def _score_sim_by_cards(win_stats: dict) -> int:
         return(2)
     else:
         return 0 # tie situation
-    
+
 def run_full_sim_and_score(master_seq_list: list, 
                            deck_size: int, 
                            seq_len: int, 

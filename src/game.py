@@ -100,14 +100,14 @@ class Game:
             # for upcoming sequence comparison
             memory.put(self.master_seq[elem_idx])
             num_cards+=1
-            print(f'Current sequence on the table: {tuple(memory.queue)}')
+            # print(f'Current sequence on the table: {tuple(memory.queue)}')
             
             # trick and cards for p1 if p1 sequence matches the top seq_len cards on the table 
             if(tuple(memory.queue) == self.two_player_seqs[0]):
                 tricks[0]+=1
                 p1_cards[0]+=num_cards
                 num_cards = 0
-                print("-----------------------P1 trick-----------------------")
+                # print("-----------------------P1 trick-----------------------")
 
                 #remove cards from memory to simulate all the in-play cards going to p1
                 while not memory.empty(): 
@@ -122,7 +122,7 @@ class Game:
                 tricks[1]+=1
                 p2_cards[0]+=num_cards
                 num_cards = 0
-                print("-----------------------P2 trick-----------------------")
+                # print("-----------------------P2 trick-----------------------")
 
                 #remove cards from memory to simulate all the in-play cards going to p1
                 while not memory.empty(): 
@@ -144,7 +144,7 @@ class Game:
         else: 
             # done iterating through full deck, break and return the statistics here in dict form
             extra[0]+=num_cards
-            print("-----------------------Round Over-----------------------")
+            # print("-----------------------Round Over-----------------------")
 
             win_stats = {"tricks": tricks, "p1_cards": p1_cards, 
                          "p2_cards": p2_cards, "extra cards": extra}

@@ -26,7 +26,7 @@ Penney's Game is a card game involving two players selecting sequences and attem
 
 ## Quick Start
 
-Open `main.py` and augment the parameters of the function `simulate_and_visualize()`, which is defined in `helpers.py`. This function will do everything except (generating, scoring, visualizing) for creating logs.
+Open `main.py` and augment the defined parameters at the top. These get passed into the function `simulate_and_visualize()`, which is defined in `helpers.py`. This function will do everything except (generating, scoring, visualizing) for creating logs.
 
 ## Dependencies 
 

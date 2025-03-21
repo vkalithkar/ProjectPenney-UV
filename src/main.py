@@ -4,6 +4,12 @@ import os
 
 from helpers import simulate_and_visualize
 
+# start here! modify these parameters to change aspects of the simulation
+seq_len = 3
+deck_size = 52
+num_decks = 10
+scoring = "TRICKS"
+
 # to record all print statements in the log, create the directory if it doesn't exist
 log_dir = "data/logs"
 os.makedirs(log_dir, exist_ok=True)  
@@ -18,8 +24,9 @@ old_stdout = sys.stdout
 log_file = open(log_file_path,"w")
 sys.stdout = log_file
 
-# start here! modify this function's parameters to change aspects of the simulation
-simulate_and_visualize(current_time, seq_len = 3, deck_size = 52, num_decks = 100000, scoring = "TRICKS")
+#run the simulation w/a helper function and generate heatmaps
+simulate_and_visualize(current_time, seq_len = seq_len, deck_size = deck_size, 
+                       num_decks = num_decks, scoring = scoring)
 
 sys.stdout = old_stdout
 log_file.close()
