@@ -19,7 +19,7 @@ log_file = open(log_file_path,"w")
 sys.stdout = log_file
 
 # start here! modify this function's parameters to change aspects of the simulation
-simulate_and_visualize(current_time, seq_len = 3, deck_size = 52, num_decks = 10000, scoring = "CARDS")
+simulate_and_visualize(current_time, seq_len = 3, deck_size = 52, num_decks = 100000, scoring = "TRICKS")
 
 sys.stdout = old_stdout
 log_file.close()
