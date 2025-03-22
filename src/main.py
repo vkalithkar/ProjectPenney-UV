@@ -7,7 +7,7 @@ from helpers import simulate_and_visualize
 # start here! modify these parameters to change aspects of the simulation
 seq_len = 3
 deck_size = 52
-num_decks = 10
+num_decks = 10000
 scoring = "TRICKS"
 
 # to record all print statements in the log, create the directory if it doesn't exist
